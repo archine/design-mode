@@ -9,6 +9,7 @@ import java.util.List;
  **/
 class PriceFactory {
 
+    private static final PriceFactory FACTORY = new PriceFactory();
     /**
      * 策略类集合
      */
@@ -16,6 +17,7 @@ class PriceFactory {
 
 
     private PriceFactory() {
+        //这边是可以改造成自动获取文件路径的哈
         priceList.add(Member.class);
         priceList.add(Ordinary.class);
         priceList.add(SuperMember.class);
@@ -41,6 +43,6 @@ class PriceFactory {
      * @return PriceFactory
      */
     static PriceFactory getInstance() {
-        return new PriceFactory();
+        return FACTORY;
     }
 }
