@@ -8,3 +8,15 @@ public interface Factory {
 
     Product getProductB();
 }
+
+class FactoryA implements Factory {
+    @Override
+    public Product getProductA() {
+        return new ProductAa();
+    }
+
+    @Override
+    public Product getProductB() {
+        return new ProductBb();
+    }
+}

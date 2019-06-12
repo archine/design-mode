@@ -6,7 +6,7 @@ package com.aj;
 public class Test {
     public static void main(String[] args) {
         //创建被观察者
-        SubjectA subjectA = new SubjectA();
+        AbstractSubjectA subjectA = new AbstractSubjectA();
         //添加观察者
         subjectA.add(new ListenerA());
         subjectA.add( new ListenerB());

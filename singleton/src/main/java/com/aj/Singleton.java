@@ -10,11 +10,7 @@ public enum  Singleton implements MySingleton{
     INSTANCE{
         @Override
         public void doSomething() {
-
-        }
-        @Override
-        public MySingleton get() {
-            return null;
+            System.out.println("执行方法1。。。");
         }
     }
 }

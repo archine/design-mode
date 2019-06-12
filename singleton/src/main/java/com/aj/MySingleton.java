@@ -5,6 +5,4 @@ package com.aj;
  **/
 public interface MySingleton {
     void doSomething();
-
-    MySingleton get();
 }
